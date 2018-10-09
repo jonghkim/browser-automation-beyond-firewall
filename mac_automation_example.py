@@ -6,7 +6,7 @@ import webbrowser
 
 warnings.filterwarnings('ignore')
 
-def trick_save(url, cwd):
+def trick_save(url, fname):
         cmd = """osascript -e 'tell document 1 of application "Safari"
             set URL to "{url}"
             set the_state to missing value
@@ -20,7 +20,7 @@ def trick_save(url, cwd):
             set myFile to open for access "{write_path}" with write permission
             write html_returned to myFile
             close access myFile
-            end tell'""".format(url=url, write_path = cwd+"/example.html")
+            end tell'""".format(url=url, write_path = fname)
         os.system(cmd)
         
 if __name__ == "__main__":
@@ -32,6 +32,6 @@ if __name__ == "__main__":
     url = 'https://www.example.com'
     cwd = os.getcwd()
 
-    trick_save(url,cwd)
+    trick_save(url, cwd + "/example.html")
 
 

@@ -10,3 +10,6 @@
 - For Ubuntu
     - export DISPLAY=:0
     - python ubuntu_automation_example.py
+
+## References
+- This code wrapped the automation code from (automate-save-page-as)[https://github.com/abiyani/automate-save-page-as] by Python
