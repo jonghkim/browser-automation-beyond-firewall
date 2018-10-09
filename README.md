@@ -9,6 +9,7 @@
     - python mac_automation_example.py
 - For Ubuntu
     - export DISPLAY=:0
+    - chmod +x save_page_as
     - python ubuntu_automation_example.py
 
 ## References
