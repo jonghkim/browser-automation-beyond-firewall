@@ -6,7 +6,9 @@
 
 ## Usage
 - For MacOS
-    - python mac_automation_example.py
+    """
+    python mac_automation_example.py
+    """
 - For Ubuntu
     - for single page
         """
@@ -14,7 +16,6 @@
         chmod +x save_page_as
         python ubuntu_automation_example.py
         """
-
     - for multiple page
         """
         export DISPLAY=:0
