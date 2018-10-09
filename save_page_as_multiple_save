@@ -228,6 +228,4 @@ else
     xdotool windowactivate "${browser_wid}" key --clearmodifiers "ctrl+F4"
 fi
 
-killall google-chrome-stable
-
 printf "INFO: Done!\n">&2

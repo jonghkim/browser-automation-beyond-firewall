@@ -23,4 +23,7 @@ if __name__ == "__main__":
 
     for i in reversed(range(5)):
         trick_save(url, cwd + "/example{}.html".format(i))
-        
+    
+    cmd = "killall google-chrome"
+    os.system(cmd)
+    
