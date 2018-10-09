@@ -19,9 +19,10 @@ if __name__ == "__main__":
     for i in range(5):
         trick_open(url, cwd + "/example{}.html".format(i))
     
-    time.sleep(10)
+    time.sleep(5)
 
     for i in reversed(range(5)):
+        print("Save Path: ", cwd + "/example{}.html".format(i))
         trick_save(url, cwd + "/example{}.html".format(i))
     
     cmd = "killall google-chrome"
