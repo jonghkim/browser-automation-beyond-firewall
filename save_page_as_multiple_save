@@ -222,12 +222,12 @@ printf "INFO: Saving web page ...\n" >&2
 sleep ${save_wait_time}
 
 # Close the browser tab/window (Ctrl+w for KDE, Ctrl+F4 otherwise)
-#if [[ "${is_kde}" -eq 1 ]]; then
-#    xdotool windowactivate "${browser_wid}" key --clearmodifiers "ctrl+w"
-#else
-#    xdotool windowactivate "${browser_wid}" key --clearmodifiers "ctrl+F4"
-#fi
+if [[ "${is_kde}" -eq 1 ]]; then
+    xdotool windowactivate "${browser_wid}" key --clearmodifiers "ctrl+w"
+else
+    xdotool windowactivate "${browser_wid}" key --clearmodifiers "ctrl+F4"
+fi
 
-killall google-chrome-stable
+#killall google-chrome-stable
 
 printf "INFO: Done!\n">&2
