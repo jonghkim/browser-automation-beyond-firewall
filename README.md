@@ -12,4 +12,4 @@
     - python ubuntu_automation_example.py
 
 ## References
-- For Ubuntu, this code wrapped the automation code from (automate-save-page-as)[https://github.com/abiyani/automate-save-page-as] by Python
+- For Ubuntu, this code wrapped the automation code from [automate-save-page-as](https://github.com/abiyani/automate-save-page-as) by Python
